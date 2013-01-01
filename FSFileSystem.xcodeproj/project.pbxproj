@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6823B4631692A9B5001009BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6823B4621692A9B5001009BC /* Foundation.framework */; };
+		68812DF9169353E20078BA60 /* FSFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 68812DF6169353E20078BA60 /* FSFileSystem.m */; };
+		68812DFA169353E20078BA60 /* FSPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 68812DF8169353E20078BA60 /* FSPath.m */; };
+		68812E0C169353F10078BA60 /* FSDropboxFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 68812DFE169353F10078BA60 /* FSDropboxFileSystem.m */; };
+		68812E0D169353F10078BA60 /* FSDropboxPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 68812E00169353F10078BA60 /* FSDropboxPath.m */; };
+		68812E0E169353F10078BA60 /* FSGoogleDriveFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 68812E03169353F10078BA60 /* FSGoogleDriveFileSystem.m */; };
+		68812E0F169353F10078BA60 /* FSLocalFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 68812E06169353F10078BA60 /* FSLocalFileSystem.m */; };
+		68812E10169353F10078BA60 /* FSLocalPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 68812E08169353F10078BA60 /* FSLocalPath.m */; };
+		68812E11169353F10078BA60 /* FSSkyDriveFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 68812E0B169353F10078BA60 /* FSSkyDriveFileSystem.m */; };
+		68812E16169354680078BA60 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68812E15169354680078BA60 /* DropboxSDK.framework */; };
+		68812E18169354750078BA60 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68812E17169354750078BA60 /* QuartzCore.framework */; };
+		68812E1A1693547A0078BA60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68812E191693547A0078BA60 /* Security.framework */; };
+		68812E1D169354D70078BA60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68812E1B169354C80078BA60 /* UIKit.framework */; };
+		68812E24169357320078BA60 /* FSFileSystemSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 68812E1E169355C40078BA60 /* FSFileSystemSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68812E25169357320078BA60 /* FSFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 68812DF5169353E20078BA60 /* FSFileSystem.h */; settings = {ATTRIBUTES = (); }; };
+		68812E26169357320078BA60 /* FSPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 68812DF7169353E20078BA60 /* FSPath.h */; settings = {ATTRIBUTES = (); }; };
+		68812E27169357430078BA60 /* FSDropboxFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 68812DFD169353F10078BA60 /* FSDropboxFileSystem.h */; settings = {ATTRIBUTES = (); }; };
+		68812E28169357430078BA60 /* FSDropboxPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 68812DFF169353F10078BA60 /* FSDropboxPath.h */; settings = {ATTRIBUTES = (); }; };
+		68812E29169357430078BA60 /* FSGoogleDriveFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 68812E02169353F10078BA60 /* FSGoogleDriveFileSystem.h */; settings = {ATTRIBUTES = (); }; };
+		68812E2A169357430078BA60 /* FSLocalFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 68812E05169353F10078BA60 /* FSLocalFileSystem.h */; settings = {ATTRIBUTES = (); }; };
+		68812E2B169357430078BA60 /* FSLocalPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 68812E07169353F10078BA60 /* FSLocalPath.h */; settings = {ATTRIBUTES = (); }; };
+		68812E2C169357430078BA60 /* FSSkyDriveFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 68812E0A169353F10078BA60 /* FSSkyDriveFileSystem.h */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6823B45D1692A9B5001009BC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6823B45F1692A9B5001009BC /* libFSFileSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFSFileSystem.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6823B4621692A9B5001009BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6823B4661692A9B5001009BC /* FSFileSystem-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FSFileSystem-Prefix.pch"; sourceTree = "<group>"; };
+		68812DF5169353E20078BA60 /* FSFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSFileSystem.h; sourceTree = "<group>"; };
+		68812DF6169353E20078BA60 /* FSFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSFileSystem.m; sourceTree = "<group>"; };
+		68812DF7169353E20078BA60 /* FSPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPath.h; sourceTree = "<group>"; };
+		68812DF8169353E20078BA60 /* FSPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPath.m; sourceTree = "<group>"; };
+		68812DFD169353F10078BA60 /* FSDropboxFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSDropboxFileSystem.h; sourceTree = "<group>"; };
+		68812DFE169353F10078BA60 /* FSDropboxFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSDropboxFileSystem.m; sourceTree = "<group>"; };
+		68812DFF169353F10078BA60 /* FSDropboxPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSDropboxPath.h; sourceTree = "<group>"; };
+		68812E00169353F10078BA60 /* FSDropboxPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSDropboxPath.m; sourceTree = "<group>"; };
+		68812E02169353F10078BA60 /* FSGoogleDriveFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSGoogleDriveFileSystem.h; sourceTree = "<group>"; };
+		68812E03169353F10078BA60 /* FSGoogleDriveFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSGoogleDriveFileSystem.m; sourceTree = "<group>"; };
+		68812E05169353F10078BA60 /* FSLocalFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLocalFileSystem.h; sourceTree = "<group>"; };
+		68812E06169353F10078BA60 /* FSLocalFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLocalFileSystem.m; sourceTree = "<group>"; };
+		68812E07169353F10078BA60 /* FSLocalPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLocalPath.h; sourceTree = "<group>"; };
+		68812E08169353F10078BA60 /* FSLocalPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLocalPath.m; sourceTree = "<group>"; };
+		68812E0A169353F10078BA60 /* FSSkyDriveFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSkyDriveFileSystem.h; sourceTree = "<group>"; };
+		68812E0B169353F10078BA60 /* FSSkyDriveFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSkyDriveFileSystem.m; sourceTree = "<group>"; };
+		68812E15169354680078BA60 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		68812E17169354750078BA60 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		68812E191693547A0078BA60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		68812E1B169354C80078BA60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		68812E1E169355C40078BA60 /* FSFileSystemSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSFileSystemSDK.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6823B45C1692A9B5001009BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6823B4631692A9B5001009BC /* Foundation.framework in Frameworks */,
+				68812E16169354680078BA60 /* DropboxSDK.framework in Frameworks */,
+				68812E18169354750078BA60 /* QuartzCore.framework in Frameworks */,
+				68812E1A1693547A0078BA60 /* Security.framework in Frameworks */,
+				68812E1D169354D70078BA60 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6823B4541692A9B5001009BC = {
+			isa = PBXGroup;
+			children = (
+				6823B4641692A9B5001009BC /* FSFileSystem */,
+				6823B4611692A9B5001009BC /* Frameworks */,
+				6823B4601692A9B5001009BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6823B4601692A9B5001009BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6823B45F1692A9B5001009BC /* libFSFileSystem.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6823B4611692A9B5001009BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6823B4621692A9B5001009BC /* Foundation.framework */,
+				68812E15169354680078BA60 /* DropboxSDK.framework */,
+				68812E17169354750078BA60 /* QuartzCore.framework */,
+				68812E191693547A0078BA60 /* Security.framework */,
+				68812E1B169354C80078BA60 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6823B4641692A9B5001009BC /* FSFileSystem */ = {
+			isa = PBXGroup;
+			children = (
+				68812E1E169355C40078BA60 /* FSFileSystemSDK.h */,
+				68812DF5169353E20078BA60 /* FSFileSystem.h */,
+				68812DF6169353E20078BA60 /* FSFileSystem.m */,
+				68812DF7169353E20078BA60 /* FSPath.h */,
+				68812DF8169353E20078BA60 /* FSPath.m */,
+				68812DFC169353F10078BA60 /* Dropbox */,
+				68812E01169353F10078BA60 /* GoogleDrive */,
+				68812E04169353F10078BA60 /* Local */,
+				68812E09169353F10078BA60 /* SkyDrive */,
+				6823B4651692A9B5001009BC /* Supporting Files */,
+			);
+			path = FSFileSystem;
+			sourceTree = "<group>";
+		};
+		6823B4651692A9B5001009BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6823B4661692A9B5001009BC /* FSFileSystem-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68812DFC169353F10078BA60 /* Dropbox */ = {
+			isa = PBXGroup;
+			children = (
+				68812DFD169353F10078BA60 /* FSDropboxFileSystem.h */,
+				68812DFE169353F10078BA60 /* FSDropboxFileSystem.m */,
+				68812DFF169353F10078BA60 /* FSDropboxPath.h */,
+				68812E00169353F10078BA60 /* FSDropboxPath.m */,
+			);
+			path = Dropbox;
+			sourceTree = "<group>";
+		};
+		68812E01169353F10078BA60 /* GoogleDrive */ = {
+			isa = PBXGroup;
+			children = (
+				68812E02169353F10078BA60 /* FSGoogleDriveFileSystem.h */,
+				68812E03169353F10078BA60 /* FSGoogleDriveFileSystem.m */,
+			);
+			path = GoogleDrive;
+			sourceTree = "<group>";
+		};
+		68812E04169353F10078BA60 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				68812E05169353F10078BA60 /* FSLocalFileSystem.h */,
+				68812E06169353F10078BA60 /* FSLocalFileSystem.m */,
+				68812E07169353F10078BA60 /* FSLocalPath.h */,
+				68812E08169353F10078BA60 /* FSLocalPath.m */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		68812E09169353F10078BA60 /* SkyDrive */ = {
+			isa = PBXGroup;
+			children = (
+				68812E0A169353F10078BA60 /* FSSkyDriveFileSystem.h */,
+				68812E0B169353F10078BA60 /* FSSkyDriveFileSystem.m */,
+			);
+			path = SkyDrive;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		68812E23169357230078BA60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68812E24169357320078BA60 /* FSFileSystemSDK.h in Headers */,
+				68812E25169357320078BA60 /* FSFileSystem.h in Headers */,
+				68812E26169357320078BA60 /* FSPath.h in Headers */,
+				68812E27169357430078BA60 /* FSDropboxFileSystem.h in Headers */,
+				68812E28169357430078BA60 /* FSDropboxPath.h in Headers */,
+				68812E29169357430078BA60 /* FSGoogleDriveFileSystem.h in Headers */,
+				68812E2A169357430078BA60 /* FSLocalFileSystem.h in Headers */,
+				68812E2B169357430078BA60 /* FSLocalPath.h in Headers */,
+				68812E2C169357430078BA60 /* FSSkyDriveFileSystem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6823B45E1692A9B5001009BC /* FSFileSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6823B46D1692A9B5001009BC /* Build configuration list for PBXNativeTarget "FSFileSystem" */;
+			buildPhases = (
+				6823B45B1692A9B5001009BC /* Sources */,
+				6823B45C1692A9B5001009BC /* Frameworks */,
+				6823B45D1692A9B5001009BC /* CopyFiles */,
+				68812E23169357230078BA60 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSFileSystem;
+			productName = FSFileSystem;
+			productReference = 6823B45F1692A9B5001009BC /* libFSFileSystem.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6823B4561692A9B5001009BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Flush Software LLC";
+			};
+			buildConfigurationList = 6823B4591692A9B5001009BC /* Build configuration list for PBXProject "FSFileSystem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6823B4541692A9B5001009BC;
+			productRefGroup = 6823B4601692A9B5001009BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6823B45E1692A9B5001009BC /* FSFileSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6823B45B1692A9B5001009BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68812DF9169353E20078BA60 /* FSFileSystem.m in Sources */,
+				68812DFA169353E20078BA60 /* FSPath.m in Sources */,
+				68812E0C169353F10078BA60 /* FSDropboxFileSystem.m in Sources */,
+				68812E0D169353F10078BA60 /* FSDropboxPath.m in Sources */,
+				68812E0E169353F10078BA60 /* FSGoogleDriveFileSystem.m in Sources */,
+				68812E0F169353F10078BA60 /* FSLocalFileSystem.m in Sources */,
+				68812E10169353F10078BA60 /* FSLocalPath.m in Sources */,
+				68812E11169353F10078BA60 /* FSSkyDriveFileSystem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6823B46B1692A9B5001009BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6823B46C1692A9B5001009BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6823B46E1692A9B5001009BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FSFileSystem.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FSFileSystem/FSFileSystem-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6823B46F1692A9B5001009BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FSFileSystem.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FSFileSystem/FSFileSystem-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6823B4591692A9B5001009BC /* Build configuration list for PBXProject "FSFileSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6823B46B1692A9B5001009BC /* Debug */,
+				6823B46C1692A9B5001009BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6823B46D1692A9B5001009BC /* Build configuration list for PBXNativeTarget "FSFileSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6823B46E1692A9B5001009BC /* Debug */,
+				6823B46F1692A9B5001009BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6823B4561692A9B5001009BC /* Project object */;
+}
