@@ -37,7 +37,7 @@
 		6823B4941692A9D7001009BC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6823B4961692A9D7001009BC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6823B4981692A9D7001009BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		68812DF2169351670078BA60 /* libFSFileSystem.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libFSFileSystem.a; path = "build/Release-iphoneos/libFSFileSystem.a"; sourceTree = "<group>"; };
+		68812DF2169351670078BA60 /* libFSFileSystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFSFileSystem.a; path = "build/Release-iphoneos/libFSFileSystem.a"; sourceTree = "<group>"; };
 		68812E12169354380078BA60 /* FolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderViewController.h; sourceTree = "<group>"; };
 		68812E13169354380078BA60 /* FolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderViewController.m; sourceTree = "<group>"; };
 		68812E2D169358A70078BA60 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
@@ -267,7 +267,7 @@
 				HEADER_SEARCH_PATHS = "../FSFileSystem/**";
 				INFOPLIST_FILE = "Example/Example-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "private missing";
+				USER_HEADER_SEARCH_PATHS = "../private ../missing";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -284,7 +284,7 @@
 				HEADER_SEARCH_PATHS = "../FSFileSystem/**";
 				INFOPLIST_FILE = "Example/Example-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "private missing";
+				USER_HEADER_SEARCH_PATHS = "../private ../missing";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
