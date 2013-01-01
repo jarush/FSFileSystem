@@ -16,16 +16,13 @@
  */
 
 #import "FSDropboxPath.h"
-#import <objc/runtime.h>
-#import <DropboxSDK/DropboxSDK.h>
+#import "FSDropboxClient.h"
 
 @interface FSDropboxPath () <DBRestClientDelegate>
-- (DBRestClient *)restClient;
+- (FSDropboxClient *)dropboxClient;
 @end
 
 @implementation FSDropboxPath
-
-static char *CALLBACK = "CALLBACK";
 
 - (id)initWithRemotePath:(NSString *)remotePath localPath:(NSString *)localPath folder:(BOOL)folder {
     self = [super init];
@@ -65,44 +62,43 @@ static char *CALLBACK = "CALLBACK";
     return _folder;
 }
 
-- (DBRestClient *)restClient {
-    DBRestClient *restClient = [[DBRestClient alloc] initWithSession:[DBSession sharedSession]];
-    restClient.delegate = self;
-
-    return restClient;
+- (FSDropboxClient *)dropboxClient {
+    return [[FSDropboxClient alloc] initWithSession:[DBSession sharedSession]];
 }
 
 - (void)listFolderWithCallback:(FSListFolderCallback)callback {
-    NSLog(@"list: %@", self.remotePath);
-    
-    DBRestClient *restClient = [self restClient];
-    objc_setAssociatedObject(restClient, CALLBACK, callback, OBJC_ASSOCIATION_COPY_NONATOMIC);
-        
-    [restClient loadMetadata:self.remotePath];
+    FSDropboxClient *dropboxClient = [self dropboxClient];
+    dropboxClient.delegate = self;
+    dropboxClient.callback = callback;
+
+    [dropboxClient loadMetadata:self.remotePath];
 }
 
 - (void)loadPathWithCallback:(FSLoadPathCallback)callback {
-    DBRestClient *restClient = [self restClient];
-    objc_setAssociatedObject(restClient, CALLBACK, callback, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    FSDropboxClient *dropboxClient = [self dropboxClient];
+    dropboxClient.delegate = self;
+    dropboxClient.callback = callback;
 
     NSString *localDir = [self.localPath stringByDeletingLastPathComponent];
     [[NSFileManager defaultManager] createDirectoryAtPath:localDir withIntermediateDirectories:YES attributes:nil error:nil];
 
-    [restClient loadFile:self.remotePath intoPath:self.localPath];
+    [dropboxClient loadFile:self.remotePath intoPath:self.localPath];
 }
 
 - (void)savePathWithCallback:(FSSavePathCallback)callback {
-    DBRestClient *restClient = [self restClient];
-    objc_setAssociatedObject(restClient, CALLBACK, callback, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    FSDropboxClient *dropboxClient = [self dropboxClient];
+    dropboxClient.delegate = self;
+    dropboxClient.callback = callback;
 
-    [restClient uploadFile:self.name toPath:[self.remotePath stringByDeletingLastPathComponent] withParentRev:nil fromPath:self.localPath];
+    [dropboxClient uploadFile:self.name toPath:[self.remotePath stringByDeletingLastPathComponent] withParentRev:nil fromPath:self.localPath];
 }
 
 - (void)deletePathWithCallback:(FSDeletePathCallback)callback {
-    DBRestClient *restClient = [self restClient];
-    objc_setAssociatedObject(restClient, CALLBACK, callback, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    FSDropboxClient *dropboxClient = [self dropboxClient];
+    dropboxClient.delegate = self;
+    dropboxClient.callback = callback;
 
-    [restClient deletePath:self.remotePath];
+    [dropboxClient deletePath:self.remotePath];
 }
 
 - (void)restClient:(DBRestClient *)client loadedMetadata:(DBMetadata *)metadata {
@@ -111,7 +107,7 @@ static char *CALLBACK = "CALLBACK";
         [children addObject:[FSDropboxPath dropboxPathWithMetadata:m]];
     }
 
-    FSListFolderCallback callback = objc_getAssociatedObject(client, CALLBACK);
+    FSListFolderCallback callback = ((FSDropboxClient *)client).callback;
     if (callback != nil) {
         callback(self, children);
     }
@@ -120,7 +116,7 @@ static char *CALLBACK = "CALLBACK";
 }
 
 - (void)restClient:(DBRestClient *)client loadedFile:(NSString *)destPath {
-    FSLoadPathCallback callback = objc_getAssociatedObject(client, CALLBACK);
+    FSLoadPathCallback callback = ((FSDropboxClient *)client).callback;
     if (callback != nil) {
         callback(self);
     }
@@ -129,7 +125,7 @@ static char *CALLBACK = "CALLBACK";
 }
 
 - (void)restClient:(DBRestClient *)client uploadedFile:(NSString *)destPath from:(NSString *)srcPath {
-    FSSavePathCallback callback = objc_getAssociatedObject(client, CALLBACK);
+    FSSavePathCallback callback = ((FSDropboxClient *)client).callback;
     if (callback != nil) {
         callback(self);
     }
@@ -138,7 +134,7 @@ static char *CALLBACK = "CALLBACK";
 }
 
 - (void)restClient:(DBRestClient *)client deletedPath:(NSString *)path {
-    FSDeletePathCallback callback = objc_getAssociatedObject(client, CALLBACK);
+    FSDeletePathCallback callback = ((FSDropboxClient *)client).callback;
     if (callback != nil) {
         callback(self);
     }

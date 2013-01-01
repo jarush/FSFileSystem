@@ -29,6 +29,8 @@
 		68812E2A169357430078BA60 /* FSLocalFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 68812E05169353F10078BA60 /* FSLocalFileSystem.h */; settings = {ATTRIBUTES = (); }; };
 		68812E2B169357430078BA60 /* FSLocalPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 68812E07169353F10078BA60 /* FSLocalPath.h */; settings = {ATTRIBUTES = (); }; };
 		68812E2C169357430078BA60 /* FSSkyDriveFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 68812E0A169353F10078BA60 /* FSSkyDriveFileSystem.h */; settings = {ATTRIBUTES = (); }; };
+		68990088169398EC00EBA870 /* FSDropboxClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 68990086169398EC00EBA870 /* FSDropboxClient.h */; };
+		68990089169398EC00EBA870 /* FSDropboxClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 68990087169398EC00EBA870 /* FSDropboxClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +70,8 @@
 		68812E191693547A0078BA60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		68812E1B169354C80078BA60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		68812E1E169355C40078BA60 /* FSFileSystemSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSFileSystemSDK.h; sourceTree = "<group>"; };
+		68990086169398EC00EBA870 /* FSDropboxClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSDropboxClient.h; sourceTree = "<group>"; };
+		68990087169398EC00EBA870 /* FSDropboxClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSDropboxClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 		68812DFC169353F10078BA60 /* Dropbox */ = {
 			isa = PBXGroup;
 			children = (
+				68990086169398EC00EBA870 /* FSDropboxClient.h */,
+				68990087169398EC00EBA870 /* FSDropboxClient.m */,
 				68812DFD169353F10078BA60 /* FSDropboxFileSystem.h */,
 				68812DFE169353F10078BA60 /* FSDropboxFileSystem.m */,
 				68812DFF169353F10078BA60 /* FSDropboxPath.h */,
@@ -196,6 +202,7 @@
 				68812E2A169357430078BA60 /* FSLocalFileSystem.h in Headers */,
 				68812E2B169357430078BA60 /* FSLocalPath.h in Headers */,
 				68812E2C169357430078BA60 /* FSSkyDriveFileSystem.h in Headers */,
+				68990088169398EC00EBA870 /* FSDropboxClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +266,7 @@
 				68812E0F169353F10078BA60 /* FSLocalFileSystem.m in Sources */,
 				68812E10169353F10078BA60 /* FSLocalPath.m in Sources */,
 				68812E11169353F10078BA60 /* FSSkyDriveFileSystem.m in Sources */,
+				68990089169398EC00EBA870 /* FSDropboxClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
