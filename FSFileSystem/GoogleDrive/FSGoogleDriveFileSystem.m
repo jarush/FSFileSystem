@@ -19,16 +19,9 @@
 
 @implementation FSGoogleDriveFileSystem
 
-- (void)loadPath:(FSPath *)path {
-
-}
-
-- (void)savePath:(FSPath *)path {
-
-}
-
-- (void)deletePath:(FSPath *)path {
-    
+- (FSPath *)rootPath {
+    // TODO
+    return nil;
 }
 
 @end
