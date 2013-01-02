@@ -19,3 +19,6 @@
 
 #define DROPBOX_APP_KEY    @""
 #define DROPBOX_APP_SECRET @""
+
+#define LIVE_CLIENT_ID     @""
+#define LIVE_CLIENT_SECRET @""

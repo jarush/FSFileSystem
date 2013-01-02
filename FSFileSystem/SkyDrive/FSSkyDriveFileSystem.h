@@ -16,7 +16,15 @@
  */
 
 #import "FSFileSystem.h"
+#import "LiveConnectClient.h"
 
-@interface FSSkyDriveFileSystem : FSFileSystem
+@interface FSSkyDriveFileSystem : FSFileSystem <LiveAuthDelegate>
+
+@property (nonatomic, retain) LiveConnectClient *liveConnectClient;
+
+- (id)initWithClientId:(NSString *)clientId;
+- (void)dealloc;
+- (void)loginFromController:(UIViewController *)controller;
+- (void)logout;
 
 @end

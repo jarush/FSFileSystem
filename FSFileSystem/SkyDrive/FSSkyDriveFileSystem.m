@@ -16,12 +16,39 @@
  */
 
 #import "FSSkyDriveFileSystem.h"
+#import "FSSkyDrivePath.h"
 
 @implementation FSSkyDriveFileSystem
 
+- (id)initWithClientId:(NSString *)clientId {
+    self = [super init];
+    if (self) {
+        _liveConnectClient = [[LiveConnectClient alloc] initWithClientId:clientId
+                                                                  scopes:@[@"wl.signin", @"wl.basic", @"wl.skydrive", @"skydrive_update"]
+                                                                delegate:self];
+    }
+    return self;
+}
+
+- (void)dealloc {
+    [_liveConnectClient release];
+    [super dealloc];
+}
+
+- (void)loginFromController:(UIViewController *)controller {
+    [_liveConnectClient login:controller delegate:self];
+}
+
+- (void)logout {
+    [self.liveConnectClient logout];
+}
+
 - (FSPath *)rootPath {
+    return [[[FSSkyDrivePath alloc] initWithObjectId:@"me/skydrive" name:@"SkyDrive" type:@"folder" fileSystem:self] autorelease];
+}
+
+- (void)authCompleted:(LiveConnectSessionStatus)status session:(LiveConnectSession *)session userState:(id)userState {
     // TODO
-    return nil;
 }
 
 @end

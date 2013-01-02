@@ -84,6 +84,10 @@
 		689901A916939CD200EBA870 /* LiveOperationProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 6899017416939CD200EBA870 /* LiveOperationProgress.m */; };
 		689901AA16939CD200EBA870 /* LiveUploadOperationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6899017516939CD200EBA870 /* LiveUploadOperationDelegate.h */; };
 		689901AB16939CD200EBA870 /* LiveUploadOverwriteOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 6899017616939CD200EBA870 /* LiveUploadOverwriteOption.h */; };
+		689901AE1693A11200EBA870 /* FSSkyDrivePath.h in Headers */ = {isa = PBXBuildFile; fileRef = 689901AC1693A11200EBA870 /* FSSkyDrivePath.h */; };
+		689901AF1693A11200EBA870 /* FSSkyDrivePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 689901AD1693A11200EBA870 /* FSSkyDrivePath.m */; };
+		689901B21693B14300EBA870 /* FSSkyDriveOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 689901B01693B14300EBA870 /* FSSkyDriveOperation.h */; };
+		689901B31693B14300EBA870 /* FSSkyDriveOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 689901B11693B14300EBA870 /* FSSkyDriveOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -181,6 +185,10 @@
 		6899017416939CD200EBA870 /* LiveOperationProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveOperationProgress.m; sourceTree = "<group>"; };
 		6899017516939CD200EBA870 /* LiveUploadOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveUploadOperationDelegate.h; sourceTree = "<group>"; };
 		6899017616939CD200EBA870 /* LiveUploadOverwriteOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveUploadOverwriteOption.h; sourceTree = "<group>"; };
+		689901AC1693A11200EBA870 /* FSSkyDrivePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSkyDrivePath.h; sourceTree = "<group>"; };
+		689901AD1693A11200EBA870 /* FSSkyDrivePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSkyDrivePath.m; sourceTree = "<group>"; };
+		689901B01693B14300EBA870 /* FSSkyDriveOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSkyDriveOperation.h; sourceTree = "<group>"; };
+		689901B11693B14300EBA870 /* FSSkyDriveOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSkyDriveOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +300,10 @@
 			children = (
 				68812E0A169353F10078BA60 /* FSSkyDriveFileSystem.h */,
 				68812E0B169353F10078BA60 /* FSSkyDriveFileSystem.m */,
+				689901AC1693A11200EBA870 /* FSSkyDrivePath.h */,
+				689901AD1693A11200EBA870 /* FSSkyDrivePath.m */,
+				689901B01693B14300EBA870 /* FSSkyDriveOperation.h */,
+				689901B11693B14300EBA870 /* FSSkyDriveOperation.m */,
 			);
 			path = SkyDrive;
 			sourceTree = "<group>";
@@ -440,6 +452,8 @@
 				689901A816939CD200EBA870 /* LiveOperationProgress.h in Headers */,
 				689901AA16939CD200EBA870 /* LiveUploadOperationDelegate.h in Headers */,
 				689901AB16939CD200EBA870 /* LiveUploadOverwriteOption.h in Headers */,
+				689901AE1693A11200EBA870 /* FSSkyDrivePath.h in Headers */,
+				689901B21693B14300EBA870 /* FSSkyDriveOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +539,8 @@
 				689901A316939CD200EBA870 /* LiveDownloadOperation.m in Sources */,
 				689901A616939CD200EBA870 /* LiveOperation.m in Sources */,
 				689901A916939CD200EBA870 /* LiveOperationProgress.m in Sources */,
+				689901AF1693A11200EBA870 /* FSSkyDrivePath.m in Sources */,
+				689901B31693B14300EBA870 /* FSSkyDriveOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
